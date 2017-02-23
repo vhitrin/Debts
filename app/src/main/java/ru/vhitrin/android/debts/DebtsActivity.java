@@ -8,6 +8,6 @@ public class DebtsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_debts);
+        setContentView(R.layout.activity_debt);
     }
 }

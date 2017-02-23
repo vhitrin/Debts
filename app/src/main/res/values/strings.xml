@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Debts</string>
+    <string name="amount_hint">Введите сумму</string>
+    <string name="description_hint">Заполните описание</string>
+    <string name="save_as_loan_text">Отдано</string>
+    <string name="save_as_debt_text">Принято</string>
+    <string name="debtor_name_title">Наименование</string>
+    <string name="debtor_name_hint">Введите наименование</string>
+    <string name="new_debtor">Добавить</string>
 </resources>
