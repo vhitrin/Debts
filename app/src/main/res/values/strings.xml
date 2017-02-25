@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Debts</string>
+    <string name="app_name">Долги</string>
     <string name="amount_hint">Введите сумму</string>
     <string name="description_hint">Заполните описание</string>
     <string name="save_as_loan_text">Отдано</string>

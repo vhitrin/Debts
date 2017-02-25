@@ -1,6 +1,8 @@
 package ru.vhitrin.android.debts;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.UUID;
 
 public class Debt {
@@ -37,6 +39,10 @@ public class Debt {
 
     public Date getLastDate() {
         return mLastDate;
+    }
+
+    public String getLastDateAmount() {
+        return new SimpleDateFormat("dd.mm.yyyy", new Locale("ru")).format(this.getLastDate()) + "   " + this.getLastAmount();
     }
 
     public void setLastDate(Date lastDate) {

@@ -5,10 +5,19 @@
                 android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/list_item_debt_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        tools:text="Debt amount"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
         android:id="@+id/list_item_debt_debtor_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/list_item_debt_amount_text_view"
+        android:layout_toStartOf="@id/list_item_debt_amount_text_view"
         android:textStyle="bold"
         android:padding="4dp"
         tools:text="Debtor name"/>
@@ -17,18 +26,9 @@
         android:id="@+id/list_item_debt_last_date_amount_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/list_item_debt_amount_text_view"
+        android:layout_toStartOf="@id/list_item_debt_amount_text_view"
         android:layout_below="@id/list_item_debt_debtor_text_view"
         android:padding="4dp"
         tools:text="Last Date and Amount"/>
-
-    <TextView
-        android:id="@+id/list_item_debt_amount_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="4dp"
-        tools:text="Debt amount"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"/>
 
 </RelativeLayout>

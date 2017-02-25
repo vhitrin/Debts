@@ -13,8 +13,11 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
+import java.util.UUID;
 
 public class LoanFragment extends Fragment {
+
+    private static final String ARG_LOAN_ID = "loan_id";
 
     private Loan mLoan;
     private Debtor mDebtor;
@@ -23,6 +26,15 @@ public class LoanFragment extends Fragment {
     private Button mLoanDateButton;
     private EditText mLoanAmountField;
     private EditText mLoanDescriptionField;
+
+    public static LoanFragment newInstance(UUID debtId) {
+        Bundle args = new Bundle();
+        args.putSerializable(ARG_LOAN_ID, debtId);
+
+        LoanFragment fragment = new LoanFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
